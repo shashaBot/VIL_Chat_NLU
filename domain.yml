@@ -1,0 +1,72 @@
+intents:
+- deny
+- greet
+- goodbye
+- affirm
+- refund_hi
+- recharge_problem_hi
+- mood_great
+- mood_unhappy
+- recharge_problem_en
+- refund_en
+- recharge_problem
+- redirect
+- account_number
+templates:
+  utter_cheer_up_en:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help_en:
+  - text: Did that help you?
+  utter_goodbye_en:
+  - text: Bye
+  utter_greet_en:
+  - text: Hey! How are you?
+  utter_happy_en:
+  - text: Great, carry on!
+  utter_iamabot_en:
+  - text: I am a bot, powered by Rasa.
+  utter_what_to_do_en:
+  - text: Here's what you can do.
+  utter_apology_en:
+  - text: We're so sorry to hear that!
+  utter_apology_hi:
+  - text: हमें बहुत खेद है
+  utter_account_opt_en:
+  - text: which account are you talking about?
+    buttons:
+    - title: '8074634649'
+      payload: '/choose{"account": "8074634649"}'
+    - title: '9239423434'
+      payload: '/choose{"account": "9239423434"}'
+  utter_account_opt_hi:
+  - text: आप किस खाते की बात कर रहे हैं?
+    buttons:
+    - title: '8074634649'
+      payload: '/choose{"account": "8074634649"}'
+    - title: '9239423434'
+      payload: '/choose{"account": "9239423434"}'
+  utter_redirect:
+  - text: I'm redirecting your chat to an agent
+  utter_recharge_process_en:
+  - text: Your recharge will be processed within in half an hour
+  utter_recharge_process_hi:
+  - text: आपका रिचार्ज आधे घंटे के भीतर संसाधित हो जाएगा
+actions:
+- utter_cheer_up_en
+- utter_did_that_help_en
+- utter_goodbye_en
+- utter_greet_en
+- utter_happy_en
+- utter_iamabot_en
+- utter_apology_en
+- utter_apology_hi
+- utter_account_opt_en
+- utter_redirect
+- utter_ask_account_en
+- 'title: "9239423434"'
+- 'title: "8074634649"'
+- utter_ask_account_hi
+- utter_what_to_do_en
+- utter_recharge_process_en
+- utter_recharge_process_hi
